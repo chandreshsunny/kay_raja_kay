@@ -1,6 +1,6 @@
 'use strict';
 let hiddenNumber = Math.trunc(Math.random() * 20) + 1;
-let score = 5;
+let score = 10;
 let highscore = 0;
 let modal = document.querySelector('.modal');
 let warn = document.querySelector('.warn');
