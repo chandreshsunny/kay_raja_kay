@@ -24,7 +24,10 @@ header {
   height: 35vh;
   border-bottom: 7px solid #eee;
 }
-
+.message{
+  width: 350px;
+    padding: 3px;
+}
 main {
   height: 65vh;
   color: #eee;
