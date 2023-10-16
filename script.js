@@ -51,6 +51,8 @@ document.querySelector('.check').addEventListener('click', function () {
         gameWon = true;
     } else {
         displayMessage('Sorry, try again!');
+        document.querySelector('.message').style.backgroundColor = ' #2ff5ff';
+         document.querySelector('.message').style.color = 'black ';
         score--;
         if (score == 1) {
             modal.classList.remove('hidden');
@@ -71,7 +73,7 @@ document.querySelector('.check').addEventListener('click', function () {
 
 document.querySelector('.again').addEventListener('click', function () {
     document.querySelector('.message').textContent = 'Start guessing...';
-    score = 5;
+    score = 10;
     hiddenNumber = Math.trunc(Math.random() * 20) + 1;
     document.querySelector('.score').textContent = score;
     document.querySelector('.number').textContent = '?';
